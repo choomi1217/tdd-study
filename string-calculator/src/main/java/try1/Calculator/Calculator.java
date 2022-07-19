@@ -25,7 +25,7 @@ public class Calculator {
     //없 애 죠?
     private void validate(int idx, String one){
         // " 1+ 2+3+4 ".replace(" ", "") -> "1+2+3+4"
-        char character = one.charAt(0) ; // "1" " 2"
+        char character = one.charAt(0); // "1" " 2"
         if(character == ' ') throw new IllegalArgumentException("입력값에 공백은 허용되지 않습니다.");
         if(idx % 2 == 0){ // 홀수 연산자, 짝수 피연산자
             if(Character.isLetter(character)){ // 짝수인데 문자면
